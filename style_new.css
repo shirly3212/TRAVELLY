@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Niramit", sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: #ff2a55;
+  border: none;
+  color: white;
+  font-size: 3.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out; 
+  animation: cludeOpacity 0.5s infinite alternate 0.5s;
+}
+
+
+button:hover {
+  background-color: #ff94a9;
+}
+
+/* nav section with Hero Section */
+.main-head {
+  background: #ff2a55;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* the nav is the parent and the children are the ul and the logo */
+nav {
+  min-height: 10vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 10 1 40rem;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 200;
+}
+
+#Logo {
+  flex: 1 1 40rem;
+  font-family: "Galada", cursive;
+}
+
+.Hero {
+  min-height: 90vh;
+  background: linear-gradient(#3d54ff, transparent), url(/img/landing-page.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Hero h3 {
+  padding: 3rem;
+}
+
+/* SECTION LOCATION */
+#Locations {
+  min-height: 100vh;
+  background: linear-gradient(transparent, #ff2a5536),
+              url(/img/new-york-page.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.Location-Head {
+  width: 90%;
+  margin: auto;
+}
+
+.Location-Head h2 {
+  padding: 1rem 0rem;
+  background: linear-gradient(#ff2a553b, #ff2a55);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.Location-Head h3 {
+  padding: 1rem 0rem;
+  background: #ff2a55;
+ /*background: linear-gradient(#ff2a553b, #ff2a55);*/
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+.moving-cloud1 {
+  animation: cloudAnimation 5s infinite alternate ease-in-out;
+}
+
+.moving-cloud2 {
+  top: 15%;
+  z-index: -1;
+  opacity: 0.75;
+  animation: cloudAnimation 10s infinite alternate ease-in-out;
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -15%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* BENEFITS SECTION */
+
+.benefits-head {
+  background: #ff2a55;
+  padding: 3rem;
+  min-height: 3vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.benefits-head h3 {
+  padding: 1rem;}
+
+.card{  box-shadow: 0px 20px 30px #ff2a55, 0px 1px 30px #3d54ffe2;
+flex: 1 1 15rem;
+min-height: 40vh;
+margin: 2rem 5rem;
+text-align: center;
+border-radius: 20px;
+}
+
+.cards {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+
+.cards img{
+  max-width: 15%;
+  margin: 2rem;
+}
+
+.card h4{padding: 3rem;}
+
+.card-icon{background: #3d54ff;
+  border-radius: 20px 20px 0px 0px;}
+
+/* FORM SECTION */
+
+form button{font-size: 4rem;
+  background-color: white;
+  color: #ff2a55;
+  width: 100%;
+  padding: 2rem;
+  font-family: "Niramit", sans-serif;
+  margin-top: 8rem;
+  padding: 2rem;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.form-wrapper {
+  background: rgba(255, 42, 85, 0.95);
+  box-shadow: 0px 20px 30px #ff2a5529, 0px 1px 30px #3d54ff92;
+  width: 60%;
+  color: white;
+  border-radius: 2rem;
+}
+
+#Contact {
+  min-height: 100vh;
+  background: linear-gradient(#3d54ffd4, #ff2a550a),
+              url(/img/contact-mountain.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+}
+
+.form-wrapper{background: rgba(255, 42, 85, 0.95);
+  box-shadow: 0px 20px 30px #ff2a5529, 0px 1px 30px #3d54ff92;
+width: 60%;
+color: white;
+border-radius: 2rem;}
+.form-wrapper label{margin: 0rem 3rem;}
+
+.form-head{text-align: center;
+padding: 2rem;}
+.name-form,.email-form{padding: 2rem;
+text-align: center;
+}
+
+footer{background: #ff2a55;
+color: white;}
+
+.footer-wrapper{
+display: flex;
+padding: 2rem;
+width: 90%;
+margin: auto;
+align-items: center;
+min-height: 10vh;
+flex-wrap: wrap;}
+
+footer ul{display: flex;
+list-style: none;
+flex: 1 1 40rem;
+justify-content: space-between;
+align-items: center;}
+
+footer h5{flex: 1 1 40rem;}
+
+button:focus{background: rgb(255, 110, 139);}
+
+/* Responsive Design for Mobile */
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  
+  #Logo {
+    padding: 2rem;
+  }
+.cloud { height: 55rem;
+pointer-events: none;
+}
+
+.Location-Head h2 {line-height: 1.3;margin: 4vh; color: #ff2a55;font-size: 7vh;}
+
+.Location-Head h3 {
+ color: #ffffff;background: #ff2a55a0; padding: 3vh;align-items: center;
+ justify-content: center;
+ text-justify: auto;
+ line-height: 1.5;}
+.moving-cloud1{ z-index: -1; max-height: fit-content;}
+.moving-cloud2{ z-index: -2; max-height: fit-content;}
+
+#Benefits{padding:3vh}
+
+#Contact{ padding: 5vh;}
+
+footer{text-align: center;}
+footer h5{ padding-bottom: 3rem;}
+.form-wrapper{width: 100%;}
